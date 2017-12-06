@@ -1,6 +1,67 @@
-<div class="bg-grey-1 pv4">
-  <div class="flex-l mhn1-l ph3 center mw7">
-    <h2 class="f2 b lh-title mb2 w-40-l">{{.heading}}</h2>
-    <p class="w-60-l mb0">{{.text}}</p>
-  </div>
-</div>
+<section class="section-primary section-big main-color exp-shadow t-bordered b-bordered">
+               <div class="container">
+
+                  <div class="row text-center">
+                     <div class="col-sm-12">
+                        <h2 class="section-title">{{.heading}}</h2>
+                        <p class="section-sub-title">
+                          {{.description}}
+                        </p>
+                     </div>
+                  </div>
+
+                  <hr class="medium">
+
+                  <div class="row">
+                     <div class="col-sm-6 pt-xl">
+                        <div class="feature-box left-icon">
+                           <div class="icon big bordered">
+                              <i class="fa fa-desktop"></i>
+                           </div>
+                           <div class="content">
+                              <h3 class="title">{{.heading1}}</h3>
+                              <p class="detail">
+                                {{.text}}
+                               </p>
+
+                    <a href="{{.buttonLink1}}" class="read-more">{{.buttonText1}} →</a>
+                           </div>
+                        </div>
+
+                        <hr class="invisible">
+
+                        <div class="feature-box left-icon">
+                           <div class="icon big bordered">
+                              <i class="fa fa-sliders"></i>
+                           </div>
+                           <div class="content">
+                              <h3 class="title">{{.heading2}}</h3>
+                              <p class="detail">
+                               {{.text2}} 
+                               </p>
+ <a href="{{.buttonLink2}}" class="read-more">{{.buttonText2}} →</a>
+                           </div>
+                        </div>
+
+                        <hr class="invisible">
+
+                        <div class="feature-box left-icon">
+                           <div class="icon big bordered">
+                              <i class="fa fa-deaf"></i>
+                           </div>
+                           <div class="content">
+                              <h3 class="title">{{.heading3}}</h3>
+                              <p class="detail">
+                               {{.text3}}
+                               </p>
+  <a href="{{.buttonLink3}}" class="read-more">{{.buttonText3}} →</a>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="col-sm-6">
+                        <img class="img-responsive" src="https://cdn.everpayinc.com/elektropay/assets/img/custom/c9.png">
+                     </div>
+                  </div>
+               </div>
+            </section>

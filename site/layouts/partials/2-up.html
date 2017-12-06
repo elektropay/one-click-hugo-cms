@@ -1,24 +1,24 @@
-<div class="bg-off-white pv4">
-  <div class="ph3 mw7 center">
-    <h2 class="f2 b lh-title mb2">{{.heading}}</h2>
-    <p class="mb4 mw6">{{.description}}</p>
+<section class="section-primary pt-50 gr13">
+               <div class="container">
+                  <div class="row t-white">
+                     <div class="col-sm-6 pt-50">
 
-    <div class="flex-ns mhn2-ns mb3">
-      <div class="ph2-ns w-50-ns">
-        <img src="{{.svg1}}" alt="" class="center db mb3" style="width: 240px">
-        <p>{{.text1}}</p>
-      </div>
+                        <i class="fa fa-h-square fa-5x"></i>
 
-      <div class="ph2-ns w-50-ns">
-        <img src="{{.svg2}}" alt="" class="center db mb3" style="width: 240px">
-        <p>{{.text2}}</p>
-      </div>
-    </div>
-
-    {{ if .buttonText }}
-      <div class="tc">
-        <a href="{{.buttonLink}}" class="btn raise">{{.buttonText}}</a>
-      </div>
-    {{ end }}
-  </div>
-</div>
+                        <h3 class="uppercase fs-18  opacity4 lt-spacing-1">{{.heading}}</h3>
+                        <h2 class="section-title fs-32 lh-38 fw-thin">
+                           {{.description}}
+                        </h2>
+                        <p class="fs-16 lh-26 fw-vthin mt-md opacity6">
+                           {{.text}}
+                        </p>
+               {{ if .buttonText }}
+              <a href="{{.buttonLink}}" class="btn btn-default mt-md mr-md"><i class="fa fa-star-o fs-16"></i> {{.buttonText}}</a>
+                  {{ end }}
+                   </div>
+                     <div class="col-sm-6">
+                        <img src="https://cdn.everpayinc.com/elektropay/assets/img/custom/7.png" class="img-responsive">
+                     </div>
+                  </div>
+               </div>
+            </section>
