@@ -289,6 +289,128 @@
    <script src="https://cdn.everpayinc.com/elektropay/assets/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 
    <script src="https://cdn.everpayinc.com/elektropay/assets/js/elektro-theme.js"></script>
+<script>var htmlDiv = document.getElementById("rs-plugin-settings-inline-css"); var htmlDivCss=".tp-caption.Miami_nostyle,.Miami_nostyle{border-width:0px;border-color:rgb(34,34,34);border-style:none}.tp-caption.tplargeslidertitle,.tplargeslidertitle{font-size:120px;line-height:120px;font-weight:700;font-family:Roboto;color:rgb(255,255,255);text-decoration:none;background-color:transparent;border-width:0px;border-color:rgb(0,0,0);border-style:none;text-shadow:none}.tp-caption.tpslidersmalltitle,.tpslidersmalltitle{font-size:41px;line-height:50px;font-weight:100;font-family:Roboto;color:#ffffff;text-decoration:none;background-color:transparent;border-width:0px;border-color:rgb(0,0,0);border-style:none;text-shadow:none}.tp-caption.tpqualitybadge,.tpqualitybadge{font-size:20px;line-height:20px;font-weight:700;font-family:Roboto;color:#ffffff;text-decoration:none;background-color:rgba(0,0,0,0);border-width:0px;border-color:rgb(255,255,255);border-style:none;text-shadow:none;white-space:nowrap;top:auto !important;bottom:0 !important;right:0 !important;left:auto !important}.tp-caption.tpmediumslidertitle,.tpmediumslidertitle{font-size:36px;line-height:30px;font-weight:100;font-family:Roboto;color:rgb(255,255,255);text-decoration:none;background-color:transparent;border-width:0px;border-color:rgb(0,0,0);border-style:none;text-shadow:none}";
+				if(htmlDiv) {
+					htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+				}else{
+					var htmlDiv = document.createElement("div");
+					htmlDiv.innerHTML = "<style>" + htmlDivCss + "</style>";
+					document.getElementsByTagName("head")[0].appendChild(htmlDiv.childNodes[0]);
+				}
+			</script>
+<script type="text/javascript">
+setREVStartSize({c: jQuery('#rev_slider_1_1'), gridwidth: [1230], gridheight: [700], sliderLayout: 'fullscreen', fullScreenAutoWidth:'off', fullScreenAlignForce:'off', fullScreenOffsetContainer:'', fullScreenOffset:''});
+			
+var revapi1,
+	tpj=jQuery;
+tpj.noConflict();			
+tpj(document).ready(function() {
+	if(tpj("#rev_slider_1_1").revolution == undefined){
+		revslider_showDoubleJqueryError("#rev_slider_1_1");
+	}else{
+		revapi1 = tpj("#rev_slider_1_1").show().revolution({
+			sliderType:"standard",
+			jsFileLocation:"//www.themepunch.com/wp-content/plugins/revslider/public/assets/js/",
+			sliderLayout:"fullscreen",
+			dottedOverlay:"none",
+			delay:9000,
+			navigation: {
+				onHoverStop:"on",
+			},
+			visibilityLevels:[1240,1024,778,480],
+			gridwidth:1230,
+			gridheight:700,
+			lazyType:"none",
+			parallax: {
+				type:"scroll",
+				origo:"enterpoint",
+				speed:400,
+				speedbg:0,
+				speedls:0,
+				levels:[5,10,15,20,25,30,35,40,45,50,46,47,48,49,50,55],
+				disable_onmobile:"on"
+			},
+			shadow:0,
+			spinner:"spinner2",
+			stopLoop:"on",
+			stopAfterLoops:0,
+			stopAtSlide:1,
+			shuffle:"off",
+			autoHeight:"off",
+			fullScreenAutoWidth:"off",
+			fullScreenAlignForce:"off",
+			fullScreenOffsetContainer: "",
+			fullScreenOffset: "",
+			disableProgressBar:"on",
+			hideThumbsOnMobile:"on",
+			hideSliderAtLimit:0,
+			hideCaptionAtLimit:769,
+			hideAllCaptionAtLilmit:0,
+			debugMode:false,
+			fallbacks: {
+				simplifyAll:"off",
+				nextSlideOnWindowFocus:"off",
+				disableFocusListener:false,
+			}
+		});
+jQuery(window).on('scroll',function() {
+    var wh = jQuery(this).height();
+  	jQuery('.tp-parallax-container').each(function() {
+        var layer = jQuery(this);
+    	var po = Math.abs(layer.data('parallaxoffset'));        
+        po = po - 10;
+        if (po<0) po = 0;
+        po = 1 - (po / 90);  
+        // Set the value -> po / 90)  higher to make a slower Fade Out, 
+        //and set it lower to make a quicker fade out.       
+        //punchgs.TweenLite.to(layer,0.2,{opacity:po});
+  });
+});
+
+
+revapi1.bind("revolution.slide.onchange",function (e,data) {
+  if (data.slideIndex==2) {
+      jQuery('body').find('.tp_countup').each(function(i) {
+          var tc = jQuery(this);
+          if (tc.data('orig')===undefined) 
+             tc.data('orig',tc.text());
+          var obj = new Object();
+          obj.sv = 0,
+          obj.ev = parseInt(tc.data('orig'),0);
+      	  obj.start = i==0 ? 1.5 : i==1 ? 3.0 : 4.0;
+      	  obj.speed = obj.ev/25 + (parseInt(tc.parent().data('speed'),0)/1000 || 0);
+	      tc.html("0%");
+		  punchgs.TweenLite.to( obj,  obj.speed, { sv: obj.ev , delay:obj.start,ease:punchgs.Power1.easeInOut,onUpdate:function(){ tc.html(parseInt(obj.sv,0)+"%"); } } )
+      });
+  }
+});	}
+	
+});	/*ready*/
+</script>
+<script>
+					var htmlDivCss = ' #rev_slider_1_1_wrapper .tp-loader.spinner2{ background-color: #FFFFFF !important; } ';
+					var htmlDiv = document.getElementById('rs-plugin-settings-inline-css');
+					if(htmlDiv) {
+						htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+					}
+					else{
+						var htmlDiv = document.createElement('div');
+						htmlDiv.innerHTML = '<style>' + htmlDivCss + '</style>';
+						document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
+					}
+					</script>
+<script>
+					var htmlDivCss = unescape(".tp-static-layers%20%7B%20z-index%3A0%20%21important%3B%20width%3A%20100%25%20%21important%3B%20height%3A%20100%25%20%21important%3B%20%7D");
+					var htmlDiv = document.getElementById('rs-plugin-settings-inline-css');
+					if(htmlDiv) {
+						htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+					}
+					else{
+						var htmlDiv = document.createElement('div');
+						htmlDiv.innerHTML = '<style>' + htmlDivCss + '</style>';
+						document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
+					}
+				  </script>
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
