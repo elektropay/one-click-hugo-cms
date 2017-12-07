@@ -289,6 +289,29 @@
    <script src="https://cdn.everpayinc.com/elektropay/assets/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 
    <script src="https://cdn.everpayinc.com/elektropay/assets/js/elektro-theme.js"></script>
+
+<script type="text/javascript">
+
+		var revapi;
+
+		jQuery(document).ready(function() {
+
+			   revapi = jQuery('.tp-banner').revolution(
+				{
+						delay:9000,
+						startwidth:1170,
+						startheight:500,
+						fullScreen:"on",
+						forceFullWidth:"on",
+						minFullScreenHeight:"320",
+						videoJsPath:"rs-plugin/videojs/",
+						fullScreenOffsetContainer: "header"
+				});
+
+		});	//ready
+
+	</script>
+
 <script>var htmlDiv = document.getElementById("rs-plugin-settings-inline-css"); var htmlDivCss=".tp-caption.Miami_nostyle,.Miami_nostyle{border-width:0px;border-color:rgb(34,34,34);border-style:none}.tp-caption.tplargeslidertitle,.tplargeslidertitle{font-size:120px;line-height:120px;font-weight:700;font-family:Roboto;color:rgb(255,255,255);text-decoration:none;background-color:transparent;border-width:0px;border-color:rgb(0,0,0);border-style:none;text-shadow:none}.tp-caption.tpslidersmalltitle,.tpslidersmalltitle{font-size:41px;line-height:50px;font-weight:100;font-family:Roboto;color:#ffffff;text-decoration:none;background-color:transparent;border-width:0px;border-color:rgb(0,0,0);border-style:none;text-shadow:none}.tp-caption.tpqualitybadge,.tpqualitybadge{font-size:20px;line-height:20px;font-weight:700;font-family:Roboto;color:#ffffff;text-decoration:none;background-color:rgba(0,0,0,0);border-width:0px;border-color:rgb(255,255,255);border-style:none;text-shadow:none;white-space:nowrap;top:auto !important;bottom:0 !important;right:0 !important;left:auto !important}.tp-caption.tpmediumslidertitle,.tpmediumslidertitle{font-size:36px;line-height:30px;font-weight:100;font-family:Roboto;color:rgb(255,255,255);text-decoration:none;background-color:transparent;border-width:0px;border-color:rgb(0,0,0);border-style:none;text-shadow:none}";
 				if(htmlDiv) {
 					htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
