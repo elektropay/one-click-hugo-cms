@@ -2,7 +2,7 @@
 title: Features
 type: products
 page: /products.html
-image: https://cdn.everpayinc.com/elektropay/assets//img/products/jumbotron.jpg
+image: https://cdn.everpayinc.com/elektropay/assets/img/custom/sectionbg.png
 heading: What we offer
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
