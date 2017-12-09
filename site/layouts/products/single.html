@@ -3,9 +3,7 @@
 
  <div class="page-inner pt-none">
 
-{{ partial "product-jumbo" (dict "imageUrl" "https://cdn.everpayinc.com/elektropay/assets/img/custom/sectionbg.png" "title" "PRODUCT OVERVIEW" "subtitle" "Elektropay features" "subtitle" "End-to-end payment solution for selling to customers on web, mobile, and native app experiences. Accept credit and debit cards, PayPal, and more.") }}
-
- +{{ partial "product-jumbo" (dict "imageUrl" "https://cdn.everpayinc.com/elektropay/assets/img/custom/sectionbg.png" .Params.image "title" .Title  "text" .Text) }}
+{{ partial "product-jumbo" (dict "imageUrl" "https://cdn.everpayinc.com/elektropay/assets/img/custom/sectionbg.png" .Params.image "title" .Title  "text" .Text) }}
 
 {{ partial "4-up" .Params.intro }}
 
