@@ -1,5 +1,5 @@
 ---
-title: Our Product
+title: Features
 type: products
 page: /products.html
 image: https://cdn.everpayinc.com/elektropay/assets//img/products/jumbotron.jpg
@@ -18,20 +18,20 @@ intro:
         variety of coffee beans grown with great care for the environment and
         local communities. Check our post or contact us directly for current
         availability.
-    - image:https://cdn.everpayinc.com/elektropay/assets/img/illustrations/coffee-gear.svg
+    - image: https://cdn.everpayinc.com/elektropay/assets/img/illustrations/coffee-gear.svg
       text: >
         We offer a small, but carefully curated selection of brewing gear and
         tools for every taste and experience level. No matter if you roast your
         own beans or just bought your first french press, you’ll find a gadget
         to fall in love with in our shop.
-    - image: /img/illustrations/tutorials.svg
+    - image: https://cdn.everpayinc.com/elektropay/assets/img/illustrations/tutorials.svg
       text: >
         Love a great cup of coffee, but never knew how to make one? Bought a
         fancy new Chemex but have no clue how to use it? Don't worry, we’re here
         to help. You can schedule a custom 1-on-1 consultation with our baristas
         to learn anything you want to know about coffee roasting and brewing.
         Email us or call the store for details.
-    - image:https://cdn.everpayinc.com/elektropay/assets/img/illustrations/meeting-space.svg
+    - image: https://cdn.everpayinc.com/elektropay/assets/img/illustrations/meeting-space.svg
       text: >
         We believe that good coffee has the power to bring people together.
         That’s why we decided to turn a corner of our shop into a cozy meeting
@@ -53,13 +53,13 @@ main:
     optimal for the plants, farmers and the local environment.
   image1:
     alt: A close-up of a paper filter filled with ground coffee
-    image: /img/products/products-grid3.jpg
+    image: https://cdn.everpayinc.com/elektropay/assets/img/products/products-grid3.jpg
   image2:
     alt: A green cup of a coffee on a wooden table
     image: /img/products/products-grid2.jpg
   image3:
     alt: Coffee beans
-    image: /img/products/products-grid1.jpg
+    image: https://cdn.everpayinc.com/elektropay/assets/img/products/products-grid1.jpg
 testimonials:
   - author: Elisabeth Kaurismäki
     quote: >-
@@ -69,7 +69,7 @@ testimonials:
     quote: >-
       Kaldi is the place to go if you want the best quality coffee. I love their
       stance on empowering farmers and transparency.
-full_image: /img/products/products-full-width.jpg
+full_image: https://cdn.everpayinc.com/elektropay/assets/img/products/products-full-width.jpg
 pricing:
   heading: Monthly subscriptions
   description: >-
